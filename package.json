@@ -14,11 +14,11 @@
     "appId": "com.arise.app",
     "productName": "起身吧",
     "mac": {
-      "target": "dmg",
+      "target": [
+        "zip",
+        "dir"
+      ],
       "category": "public.app-category.utilities"
-    },
-    "dmg": {
-      "title": "起身吧 (Arise)"
     },
     "files": [
       "main.js",
