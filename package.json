@@ -1,0 +1,33 @@
+{
+  "name": "arise",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "起身吧 (Arise) - macOS 菜单栏久坐提醒应用",
+  "build": {
+    "appId": "com.arise.app",
+    "productName": "起身吧",
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.utilities"
+    },
+    "dmg": {
+      "title": "起身吧 (Arise)"
+    },
+    "files": [
+      "main.js",
+      "iconTemplate.png",
+      "iconTemplate@2x.png"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^41.0.3",
+    "electron-builder": "^26.8.1"
+  }
+}
